@@ -131,6 +131,10 @@ def render_verification_html(verification: Optional[VerificationResult]) -> str:
     for c in verification.claims:
         status_value = c.status.value if isinstance(c.status, ClaimStatus) else str(c.status)
         sources_str = ", ".join(f"[{n}]" for n in c.cited_sources) or "none"
+        explanation_html = (
+            f'<div class="claim-explanation">{_html.escape(c.explanation)}</div>'
+            if c.explanation else ""
+        )
         rows.append(
             f'<div class="claim-row status-{status_value}">'
             f'<div class="claim-text">{_html.escape(c.claim)}</div>'
@@ -138,7 +142,7 @@ def render_verification_html(verification: Optional[VerificationResult]) -> str:
             f'<span class="status-badge status-{status_value}">{status_value.replace("_", " ")}</span>'
             f'<span class="claim-sources">cites {sources_str}</span>'
             "</div>"
-            f'{f"<div class=\"claim-explanation\">{_html.escape(c.explanation)}</div>" if c.explanation else ""}'
+            f'{explanation_html}'
             "</div>"
         )
     notes = (
