@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rag-vs-longcontext",
+    "category": "technology",
+    "query": "What are the trade-offs between retrieval-augmented generation and long-context LLMs for enterprise search?"
+  },
+  {
+    "id": "smr-progress",
+    "category": "energy",
+    "query": "How is small modular nuclear reactor technology progressing in 2026?"
+  },
+  {
+    "id": "glp1-cardio-risk",
+    "category": "health",
+    "query": "What do recent studies say about GLP-1 drugs and long-term cardiovascular risk?"
+  },
+  {
+    "id": "agent-memory-architectures",
+    "category": "technology",
+    "query": "Compare current approaches to AI agent memory: vector stores vs. graph memory."
+  },
+  {
+    "id": "carbon-capture-economics",
+    "category": "climate",
+    "query": "Is direct air capture carbon removal becoming economically viable?"
+  },
+  {
+    "id": "remote-work-productivity",
+    "category": "economics",
+    "query": "What does recent research conclude about remote work's effect on productivity?"
+  },
+  {
+    "id": "solid-state-batteries",
+    "category": "technology",
+    "query": "What are the latest advances in solid-state battery technology for EVs?"
+  },
+  {
+    "id": "fusion-energy-timeline",
+    "category": "energy",
+    "query": "What is a realistic timeline for commercial fusion energy based on current progress?"
+  }
+]
